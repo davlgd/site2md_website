@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Convert HTML to Markdown instantly">
+    <meta name="theme-color" content="#111111">
+    <title>HTML → MD | As a Service</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="/static/favicon.ico">
+    <script type="module" src="/static/components.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <ascii-logo></ascii-logo>
+        <nav>
+            <a href="/">home</a> |
+            <a href="https://labs.davlgd.fr" target="_blank">blog</a> |
+            <a href="https://github.com/davlgd/site2md" target="_blank">github</a>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <p>
+                Convert any HTML page to Markdown. Ideal to provide content to LLMs(<a href="https://llmstxt.org/" target="_blank">.txt</a>).
+            </p>
+        </div>
+        <url-converter></url-converter>
+
+        <terminal-example title="Or use curl directly:" commands='[
+            {"cmd": "curl", "args": "/https://example.com", "root": false},
+            {"cmd": "curl", "args": "/https://example.com?format=json", "root": false}
+        ]'></terminal-example>
+
+        <feature-grid features='[
+            {"title": "Clean Output", "description": "No ads, no navigation, just content"},
+            {"title": "Rate Limited", "description": "Fair usage with quotas"},
+            {"title": "Cached Results", "description": "Faster response times"},
+            {"title": "Open Source", "description": "Inspect, modify, self-host"}
+        ]'></feature-grid>
+    </main>
+    <footer>
+        <nav>
+            <a href="https://labs.davlgd.fr" target="_blank">blog</a> |
+            <a href="https://github.com/davlgd/site2md" target="_blank">source</a> |
+            <a href="https://github.com/davlgd/site2md/issues" target="_blank">issues</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

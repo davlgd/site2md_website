@@ -1,0 +1,9 @@
+[project]
+name = "site2md_website"
+version = "0.1.0"
+description = "A tool to convert any website to Markdown through an API or a dedicated web page. Based on site2md."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "site2md>=0.1",
+]
