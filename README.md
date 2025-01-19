@@ -35,3 +35,7 @@ Deploy the application:
 clever deploy
 clever open
 ```
+
+## License
+
+This project is licensed under the MIT License.
